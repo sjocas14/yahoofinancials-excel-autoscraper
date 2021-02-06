@@ -5,6 +5,8 @@ At the current moment, the program scrapes current price, 50-day moving average,
 
 Ideally, I would like to expand this stock screener in three major ways:
 
-1) speed up the scraping of the data (currently the program takes ~5 seconds per ticker), 
-2) Add additional information, perhaps even creating different excel tabs for each stock, complete with charts, historical data and projections
-3) Add a section that would gather general "sentiment" surrounding the company, which would be achieved by scraping company news off a reputable market news site (likely either Wall Street Journal, Bloomberg, or MarketWatch.) The company news would then be fed through a sentiment analysis library like texblob or VADER, or would be run through an ML algorithm that has been trained on thousands of stock market news reports to indicate the general sentiments of news outlets. 
+1) speed up the scraping of the data (currently the program takes ~5 seconds per ticker)
+
+2) Add additional information, perhaps even creating different excel tabs for each stock, complete with charts, historical data and projections, buy/sell ratings, etc. I want this program in its final form to be a program that is run once, and then the output file should provide an investor almost everything they would need to know about that company to make investment decisions surrounding those stocks. 
+
+3) Add a section that would gather general "sentiment" surrounding the company, which would be achieved by scraping company news off a reputable market news site (likely either Wall Street Journal, Bloomberg, or MarketWatch.) The company news would then be fed through a sentiment analysis library like texblob or VADER, or would be run through an ML algorithm that has been trained on thousands of stock market news reports to indicate the general "public sentiment" of those stocks. The primary reason for this would be if a company has particularly impressive financials but "neutral to negative" coverage, that could point stock traders to possibly undervalued stocks 
